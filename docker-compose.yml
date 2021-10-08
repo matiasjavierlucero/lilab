@@ -9,4 +9,10 @@ services:
       - POSTGRES_PASSWORD=secure_pass_here
     ports:
       - '5432:5432'
-    
+
+  nginx:
+    build: ./services/nginx
+    ports:
+      - 1337:80
+    depends_on:
+      - web

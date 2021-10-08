@@ -21,7 +21,7 @@ def hello():
     return render_template('index.html')
 
 from clients.controllers_client import *
-from credits.controllers import *
+from credit.controllers import *
 
 if __name__ == '__main__':
     app.run()
