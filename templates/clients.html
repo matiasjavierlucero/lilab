@@ -1,0 +1,30 @@
+{%extends 'layout.html'%}
+{%block title%} INICIO {%endblock%}
+{%block content%}
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Riesgo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for client in clients%}
+                <tr>
+                    <td scope="row">{{client.name}}</td>
+                    <td>{{client.risk}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+    <div class="col-2">
+        <a href="/populate_table" class="btn btn-info">
+            Actualizar listado de clientes
+        </a>
+    </div>
+</div>
+{%endblock%}
