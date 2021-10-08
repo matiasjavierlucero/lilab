@@ -1,7 +1,7 @@
 
-#[WIP] Project to analyze personal credits
+# [WIP] Project to analyze personal credits
 
-# Run project
+## Run project
  - clone this repository
  - create a virtual environt with *pipenv shell*
  - run *pip install -r requierements.txt*
